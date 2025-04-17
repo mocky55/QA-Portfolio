@@ -8,25 +8,36 @@ My bug reports and testing work for Toby's Island
 ## Toby's Island – Volunteer QA
 
 QA Portfolio Entry #1
-Softlock & Progression Block: Teleporter Logic Break
+Elevator Softlock + Evolution Crash Chain
 Game: Toby’s Island
-Type: Game-breaking bug
+Type: Environment softlock & post-evolution crash
 Summary:
-Player was unable to reach a major boss (Asmodeus) due to teleport logic breaking after using a fast-travel point.
+While revisiting Trogus’s temple, I encountered two separate game-breaking issues:
 
-Reported Behavior:
+Elevator malfunction: After riding the elevator back down, the door failed to open and left me stuck.
 
-“There’s no way to redo the boat ride in the lava tubes. You can’t reach Asmodeus if you teleport back and change the teleporter.”
+Battle softlock: Shortly after, in a Marl encounter, enemy AI failed to act after their turn began.
 
-Follow-up:
-Later discovered a secondary teleporter bug:
+Evolution crash: Later, after evolving a level 7 Jemjell into Athanel and continuing to the next boss encounter, selecting AlphaRay triggered a crash.
 
-“The teleporter in the desert didn’t anchor the position. When I used the village teleporter it brought me back to the teleporter I used before the desert.”
+Elevator Softlock (Environment bug):
 
-Impact:
-Highlighted multiple edge cases in the game's teleportation system. Dev flagged it as a priority to patch.
+“Elevator doesn’t open if you go back the way you came... played the animation but then nothing — I’m stuck.”
+![image](https://github.com/user-attachments/assets/2a399dba-361f-44e7-9290-3f1800ab7aba)
 
-✅ Portfolio Value: Shows how you think about progression systems, player access, and how bugs can cascade.
+
+Battle AI Hang (Softlock):
+
+“Completed my turn, the Marls get their turn and they don’t do anything. Forever.”
+![image](https://github.com/user-attachments/assets/1ebff1d2-463e-4a6d-a7bd-253b58d64275)
+
+
+Evolution Bug (Crash):
+
+“Had a level 7 Jemjell, evolved into Athanel, then chose AlphaRay and got this crash…”
+![image](https://github.com/user-attachments/assets/598d0207-2121-4f70-90fe-f7e5939ccaf9)
+![image](https://github.com/user-attachments/assets/fd65a84a-4727-4619-80ca-78f3c5fb15b7)
+
 
 
 
@@ -92,35 +103,26 @@ Identified a highly niche but critical data overwrite bug caused by legacy debug
 
 
 QA Portfolio Entry #4
-Elevator Softlock + Evolution Crash Chain
+Softlock & Progression Block: Teleporter Logic Break
 Game: Toby’s Island
-Type: Environment softlock & post-evolution crash
+Type: Game-breaking bug
 Summary:
-While revisiting Trogus’s temple, I encountered two separate game-breaking issues:
+Player was unable to reach a major boss (Asmodeus) due to teleport logic breaking after using a fast-travel point.
 
-Elevator malfunction: After riding the elevator back down, the door failed to open and left me stuck.
+Reported Behavior:
 
-Battle softlock: Shortly after, in a Marl encounter, enemy AI failed to act after their turn began.
+“There’s no way to redo the boat ride in the lava tubes. You can’t reach Asmodeus if you teleport back and change the teleporter.”
 
-Evolution crash: Later, after evolving a level 7 Jemjell into Athanel and continuing to the next boss encounter, selecting AlphaRay triggered a crash.
+Follow-up:
+Later discovered a secondary teleporter bug:
 
-Elevator Softlock (Environment bug):
+“The teleporter in the desert didn’t anchor the position. When I used the village teleporter it brought me back to the teleporter I used before the desert.”
 
-“Elevator doesn’t open if you go back the way you came... played the animation but then nothing — I’m stuck.”
-![image](https://github.com/user-attachments/assets/2a399dba-361f-44e7-9290-3f1800ab7aba)
+Impact:
+Highlighted multiple edge cases in the game's teleportation system. Dev flagged it as a priority to patch.
 
+✅ Portfolio Value: Shows how you think about progression systems, player access, and how bugs can cascade.
 
-Battle AI Hang (Softlock):
-
-“Completed my turn, the Marls get their turn and they don’t do anything. Forever.”
-![image](https://github.com/user-attachments/assets/1ebff1d2-463e-4a6d-a7bd-253b58d64275)
-
-
-Evolution Bug (Crash):
-
-“Had a level 7 Jemjell, evolved into Athanel, then chose AlphaRay and got this crash…”
-![image](https://github.com/user-attachments/assets/598d0207-2121-4f70-90fe-f7e5939ccaf9)
-![image](https://github.com/user-attachments/assets/fd65a84a-4727-4619-80ca-78f3c5fb15b7)
 
 
 Dev responses:
