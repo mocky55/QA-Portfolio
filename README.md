@@ -7,7 +7,7 @@ My bug reports and testing work for Toby's Island
 
 ## Toby's Island – Volunteer QA
 
-QA Portfolio Entry #1
+#QA Portfolio Entry #1
 Elevator Softlock + Evolution Crash Chain
 Game: Toby’s Island
 Type: Environment softlock & post-evolution crash
