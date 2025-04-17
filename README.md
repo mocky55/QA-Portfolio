@@ -91,6 +91,43 @@ Identified a highly niche but critical data overwrite bug caused by legacy debug
 
 
 
+QA Portfolio Entry #4
+Elevator Softlock + Evolution Crash Chain
+Game: Toby’s Island
+Type: Environment softlock & post-evolution crash
+Summary:
+While revisiting Trogus’s temple, I encountered two separate game-breaking issues:
+
+Elevator malfunction: After riding the elevator back down, the door failed to open and left me stuck.
+
+Battle softlock: Shortly after, in a Marl encounter, enemy AI failed to act after their turn began.
+
+Evolution crash: Later, after evolving a level 7 Jemjell into Athanel and continuing to the next boss encounter, selecting AlphaRay triggered a crash.
+
+Elevator Softlock (Environment bug):
+
+“Elevator doesn’t open if you go back the way you came... played the animation but then nothing — I’m stuck.”
+![image](https://github.com/user-attachments/assets/2a399dba-361f-44e7-9290-3f1800ab7aba)
+
+
+Battle AI Hang (Softlock):
+
+“Completed my turn, the Marls get their turn and they don’t do anything. Forever.”
+![image](https://github.com/user-attachments/assets/1ebff1d2-463e-4a6d-a7bd-253b58d64275)
+
+
+Evolution Bug (Crash):
+
+“Had a level 7 Jemjell, evolved into Athanel, then chose AlphaRay and got this crash…”
+![image](https://github.com/user-attachments/assets/598d0207-2121-4f70-90fe-f7e5939ccaf9)
+![image](https://github.com/user-attachments/assets/fd65a84a-4727-4619-80ca-78f3c5fb15b7)
+
+
+Dev responses:
+
+“You’re the only player to make it that far... well, take a break and I’ll fix everything you showed me so far.”
+
+
 Other Notes You Can Use as Highlights or Quotes
 Caught outdated label "SP" and suggested updated naming
 
@@ -106,28 +143,6 @@ Reported crashes during crafting system usage and empty inventory handling (char
 
 
 
-
-### 1. Crash Entering Alouen’s Crystal Prison
-**Date:** May 18, 2024  
-**Bug:** Crash when walking through the prison door  
-**Error:** RGSS Error – failed to create bitmap  
-**Notes:** Likely caused by map size exceeding limits.  
-**Media:**  
-![image](https://github.com/user-attachments/assets/0b5eb10a-95d8-4447-a6b3-d662905f90ce)
-
-**Quote:**  
-> “Crash walking up through the door to Alouen’s crystal prison place.”
-
----
-
-### 2. Ladder Softlock
-**Bug:** Player stuck at bottom of ladder, cannot move  
-**Steps:**  
-1. Climb down ladder  
-2. Player appears, but cannot move horizontally  
-**Workaround:** Climb back up  
-**Dev Response:**  
-> “I'll upload another patch shortly.”
 
 ---
 
