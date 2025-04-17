@@ -13,6 +13,8 @@ My bug reports and testing work for Toby's Island
 **Error:** RGSS Error – failed to create bitmap  
 **Notes:** Likely caused by map size exceeding limits.  
 **Media:**  
+![image](https://github.com/user-attachments/assets/0b5eb10a-95d8-4447-a6b3-d662905f90ce)
+
 ![Crash Screenshot](link)  
 **Quote:**  
 > “Crash walking up through the door to Alouen’s crystal prison place.”
